@@ -119,5 +119,4 @@ export const STOCKS: StockMeta[] = [
   { code: '3099', name: '三越伊勢丹ホールディングス', segment: 'mid' },
   { code: '7453', name: '良品計画', segment: 'mid' },
   { code: '9831', name: 'ヤマダホールディングス', segment: 'mid' },
-  { code: '2587', name: 'サントリービバレッジ&フード', segment: 'mid' },
 ]
