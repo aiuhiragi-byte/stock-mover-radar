@@ -65,18 +65,23 @@ export async function fetchQuoteBatch(
   const res = await fetch(url.toString())
   const body: unknown = await res.json()
 
-  // APIキー不正・レート制限超過などリクエスト全体が失敗した場合
-  if (isErrorPayload(body)) {
-    throw new TwelveDataApiError(body)
-  }
-
   const result = new Map<string, QuoteOrError>()
 
   if (codes.length === 1) {
-    // 単一シンボルの場合はオブジェクトがフラットに返る
-    const quote = body as TwelveDataQuote
-    result.set(codes[0], { ok: true, quote })
+    // 単一シンボルの場合はオブジェクトがフラットに返る。プラン制限等のエラーもこの形で
+    // 返るため、個別シンボルのエラーとして扱う(APIキー不正等の致命的エラーは複数シンボル
+    // のバッチでも同様に発生するため、そちらで検出される)
+    if (isErrorPayload(body)) {
+      result.set(codes[0], { ok: false, error: body.message })
+    } else {
+      result.set(codes[0], { ok: true, quote: body as TwelveDataQuote })
+    }
     return result
+  }
+
+  // APIキー不正・レート制限超過などリクエスト全体が失敗した場合
+  if (isErrorPayload(body)) {
+    throw new TwelveDataApiError(body)
   }
 
   // 複数シンボルの場合はシンボルをキーにしたオブジェクトで返る
