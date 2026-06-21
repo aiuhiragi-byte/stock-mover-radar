@@ -15,7 +15,3 @@ export interface ResultEntry {
 }
 
 export type ResultMap = Record<string, ResultEntry>
-
-export type ScanStatus = 'idle' | 'scanning' | 'stopped' | 'done' | 'error'
-
-export type ScanTarget = 'all' | 'large' | 'mid'
