@@ -1,7 +1,4 @@
 export const STORAGE_KEYS = {
-  apiKey: 'stock-mover-radar:apiKey',
-  results: 'stock-mover-radar:results',
-  scanTarget: 'stock-mover-radar:scanTarget',
   segmentFilter: 'stock-mover-radar:segmentFilter',
   showAll: 'stock-mover-radar:showAll',
 } as const

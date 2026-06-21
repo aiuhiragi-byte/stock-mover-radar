@@ -45,26 +45,6 @@ body {
   overflow: hidden;
 }
 
-.panel-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 16px;
-  background: none;
-  border: none;
-  color: var(--text);
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.panel-status {
-  font-size: 0.85rem;
-  font-weight: 400;
-  color: var(--text-dim);
-}
-
 .panel-body {
   padding: 0 16px 16px;
 }
@@ -87,80 +67,11 @@ body {
   color: var(--accent);
 }
 
-.apikey-row {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 10px;
-}
-
-.apikey-row input {
-  flex: 1;
-}
-
-.apikey-actions {
-  display: flex;
-  gap: 8px;
-}
-
-input[type='text'],
-input[type='password'] {
-  background: #0c1015;
-  border: 1px solid var(--panel-border);
-  border-radius: 6px;
-  color: var(--text);
-  padding: 8px 10px;
-  font-size: 0.9rem;
-}
-
-button {
-  background: #1f2731;
-  border: 1px solid var(--panel-border);
-  color: var(--text);
-  border-radius: 6px;
-  padding: 8px 14px;
-  font-size: 0.9rem;
-  cursor: pointer;
-}
-
-button:hover:not(:disabled) {
-  border-color: var(--accent);
-}
-
-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-}
-
-button.secondary {
-  background: transparent;
-}
-
-.scan-target-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-bottom: 14px;
-  font-size: 0.9rem;
-}
-
-.scan-target-row label,
 .filter-row label {
   display: inline-flex;
   align-items: center;
   gap: 6px;
   cursor: pointer;
-}
-
-.scan-buttons {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 10px;
-}
-
-.scan-progress {
-  color: var(--text-dim);
-  font-size: 0.85rem;
 }
 
 .error-banner {

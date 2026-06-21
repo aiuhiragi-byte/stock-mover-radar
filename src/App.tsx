@@ -1,67 +1,66 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { STOCKS } from './data/stocks'
-import { ApiKeySettings } from './components/ApiKeySettings'
-import { ScanControls } from './components/ScanControls'
 import { MoversBoard } from './components/MoversBoard'
 import { useLocalStorageState } from './hooks/useLocalStorageState'
-import { useStockScanner } from './hooks/useStockScanner'
 import { STORAGE_KEYS } from './lib/storage'
-import type { ScanTarget } from './lib/types'
+import { formatTime } from './lib/format'
+import type { ResultMap } from './lib/types'
+
+interface ScanResultsPayload {
+  generatedAt: string
+  results: ResultMap
+}
 
 function App() {
-  const [apiKey, setApiKey] = useLocalStorageState(STORAGE_KEYS.apiKey, '')
-  const [scanTarget, setScanTarget] = useLocalStorageState<ScanTarget>(STORAGE_KEYS.scanTarget, 'all')
   const [segmentFilter, setSegmentFilter] = useLocalStorageState(STORAGE_KEYS.segmentFilter, {
     large: true,
     mid: true,
   })
   const [showAll, setShowAll] = useLocalStorageState(STORAGE_KEYS.showAll, false)
+  const [data, setData] = useState<ScanResultsPayload | null>(null)
+  const [loadError, setLoadError] = useState<string | null>(null)
 
-  const { results, status, progress, fatalError, nextBatchAt, start, stop } = useStockScanner(apiKey)
+  useEffect(() => {
+    let cancelled = false
+    fetch('/scan-results.json', { cache: 'no-store' })
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`)
+        return res.json() as Promise<ScanResultsPayload>
+      })
+      .then((payload) => {
+        if (!cancelled) setData(payload)
+      })
+      .catch(() => {
+        if (!cancelled) setLoadError('データの取得に失敗しました。しばらくしてから再読み込みしてください。')
+      })
+    return () => {
+      cancelled = true
+    }
+  }, [])
 
-  const counts = useMemo(
-    () => ({
-      all: STOCKS.length,
-      large: STOCKS.filter((s) => s.segment === 'large').length,
-      mid: STOCKS.filter((s) => s.segment === 'mid').length,
-    }),
-    [],
-  )
-
-  const stocksForTarget = useMemo(
-    () => (scanTarget === 'all' ? STOCKS : STOCKS.filter((s) => s.segment === scanTarget)),
-    [scanTarget],
-  )
+  const universeSize = useMemo(() => STOCKS.length, [])
 
   return (
     <div className="app">
       <header className="app-header">
         <h1>Stock Mover Radar</h1>
         <p className="subtitle">日本株（東証）大型・中型株の急騰・急落モニター</p>
+        <p className="hint small">
+          {data ? `最終取得: ${formatTime(new Date(data.generatedAt).getTime())}` : '読み込み中…'}
+          （6時間ごとに自動更新）
+        </p>
       </header>
 
       <main>
-        <ApiKeySettings apiKey={apiKey} onChange={setApiKey} />
-
-        <ScanControls
-          scanTarget={scanTarget}
-          onScanTargetChange={setScanTarget}
-          status={status}
-          progress={progress}
-          nextBatchAt={nextBatchAt}
-          fatalError={fatalError}
-          onStart={() => start(stocksForTarget)}
-          onStop={stop}
-          counts={counts}
-        />
+        {loadError && <p className="error-banner">{loadError}</p>}
 
         <MoversBoard
-          results={results}
+          results={data?.results ?? {}}
           segmentFilter={segmentFilter}
           onSegmentFilterChange={setSegmentFilter}
           showAll={showAll}
           onShowAllChange={setShowAll}
-          universeSize={stocksForTarget.length}
+          universeSize={universeSize}
         />
       </main>
 
