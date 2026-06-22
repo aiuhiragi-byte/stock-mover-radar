@@ -1,21 +1,10 @@
 import { existsSync, readFileSync, writeFileSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { STOCKS } from '../src/data/stocks.ts'
-import {
-  DEFAULT_BATCH_INTERVAL_MS,
-  DEFAULT_BATCH_SIZE,
-  fetchQuoteBatch,
-  TwelveDataApiError,
-} from '../src/lib/twelvedata.ts'
-import type { ResultEntry, ResultMap } from '../src/lib/types.ts'
+import { DEFAULT_BATCH_INTERVAL_MS, DEFAULT_CONCURRENCY, fetchQuote } from '../src/lib/yahoo.ts'
+import type { ResultMap } from '../src/lib/types.ts'
 
 const OUTPUT_PATH = fileURLToPath(new URL('../public/scan-results.json', import.meta.url))
-
-function toNumber(value: string | undefined): number | null {
-  if (value === undefined) return null
-  const n = Number(value)
-  return Number.isFinite(n) ? n : null
-}
 
 function chunk<T>(items: T[], size: number): T[][] {
   const out: T[][] = []
@@ -40,51 +29,40 @@ function loadPreviousResults(): ResultMap {
 }
 
 async function main() {
-  const apiKey = process.env.TWELVEDATA_API_KEY
-  if (!apiKey) {
-    console.error('TWELVEDATA_API_KEY が設定されていません')
-    process.exitCode = 1
-    return
-  }
-
   const previous = loadPreviousResults()
   const results: ResultMap = { ...previous }
-  const batches = chunk(STOCKS, DEFAULT_BATCH_SIZE)
-  let hadError = false
+  const batches = chunk(STOCKS, DEFAULT_CONCURRENCY)
+  let successCount = 0
 
   for (let i = 0; i < batches.length; i++) {
     const batch = batches[i]
-    const codes = batch.map((s) => s.code)
-    const metaByCode = new Map(batch.map((s) => [s.code, s]))
 
-    try {
-      const quotes = await fetchQuoteBatch(codes, apiKey)
-      const fetchedAt = Date.now()
-
-      for (const [code, outcome] of quotes) {
-        const meta = metaByCode.get(code)
-        if (!meta) continue
-        const prevEntry = previous[code]
+    await Promise.all(
+      batch.map(async (meta) => {
+        const outcome = await fetchQuote(meta.code)
+        const prevEntry = previous[meta.code]
 
         if (outcome.ok) {
-          const q = outcome.quote
-          const entry: ResultEntry = {
-            code,
+          successCount++
+          const { price, previousClose, volume, isMarketOpen } = outcome.quote
+          const change = price - previousClose
+          const percentChange = previousClose !== 0 ? (change / previousClose) * 100 : null
+          results[meta.code] = {
+            code: meta.code,
             name: meta.name,
             segment: meta.segment,
-            price: toNumber(q.close),
-            previousClose: toNumber(q.previous_close),
-            change: toNumber(q.change),
-            percentChange: toNumber(q.percent_change),
-            volume: toNumber(q.volume),
-            isMarketOpen: q.is_market_open ?? null,
-            updatedAt: fetchedAt,
+            price,
+            previousClose,
+            change,
+            percentChange,
+            volume,
+            isMarketOpen,
+            updatedAt: Date.now(),
             error: null,
           }
-          results[code] = entry
         } else {
-          results[code] = {
-            code,
+          results[meta.code] = {
+            code: meta.code,
             name: meta.name,
             segment: meta.segment,
             price: prevEntry?.price ?? null,
@@ -97,18 +75,10 @@ async function main() {
             error: outcome.error,
           }
         }
-      }
+      }),
+    )
 
-      console.log(`batch ${i + 1}/${batches.length} 取得完了 (${codes.length}件)`)
-    } catch (err) {
-      if (err instanceof TwelveDataApiError) {
-        console.error(`Twelve Data APIエラー: ${err.message} (code=${err.code})`)
-      } else {
-        console.error('通信エラーが発生しました', err)
-      }
-      hadError = true
-      break
-    }
+    console.log(`batch ${i + 1}/${batches.length} 取得完了 (${batch.length}件)`)
 
     const isLast = i === batches.length - 1
     if (!isLast) {
@@ -118,8 +88,12 @@ async function main() {
 
   const output = { generatedAt: new Date().toISOString(), results }
   writeFileSync(OUTPUT_PATH, JSON.stringify(output, null, 2) + '\n')
-  console.log(`wrote ${Object.keys(results).length} entries to ${OUTPUT_PATH}`)
-  if (hadError) process.exitCode = 1
+  console.log(`wrote ${Object.keys(results).length} entries to ${OUTPUT_PATH} (成功: ${successCount}/${STOCKS.length})`)
+
+  if (successCount === 0) {
+    console.error('全銘柄の取得に失敗しました')
+    process.exitCode = 1
+  }
 }
 
 main()

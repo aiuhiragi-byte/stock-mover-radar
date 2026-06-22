@@ -19,8 +19,6 @@ jobs:
       - run: npm ci
       - name: Run scan
         run: npm run scan
-        env:
-          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
       - name: Commit results
         if: always()
         run: |

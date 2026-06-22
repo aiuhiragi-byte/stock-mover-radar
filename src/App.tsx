@@ -66,7 +66,7 @@ function App() {
 
       <footer className="app-footer">
         <p>
-          データ提供: <a href="https://twelvedata.com/" target="_blank" rel="noreferrer">Twelve Data</a>
+          データ提供: <a href="https://finance.yahoo.com/" target="_blank" rel="noreferrer">Yahoo Finance</a>
           。本アプリは情報提供のみを目的とし、投資助言ではありません。大型・中型の区分は固定リストによる簡易分類です。
         </p>
       </footer>
