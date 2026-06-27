@@ -22,5 +22,8 @@ export function formatVolume(value: number | null): string {
 
 export function formatTime(epochMs: number | null): string {
   if (epochMs === null) return '未取得'
-  return new Date(epochMs).toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+  const date = new Date(epochMs)
+  const datePart = date.toLocaleDateString('ja-JP', { month: '2-digit', day: '2-digit' })
+  const timePart = date.toLocaleTimeString('ja-JP', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+  return `${datePart} ${timePart}`
 }
