@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T08:20:16.571Z",
+  "generatedAt": "2026-08-05T13:45:31.737Z",
   "results": {
     "1605": {
       "code": "1605",
@@ -11,7 +11,7 @@
       "percentChange": -6.449834619625137,
       "volume": 4662800,
       "isMarketOpen": false,
-      "updatedAt": 1785918012638,
+      "updatedAt": 1785937527488,
       "error": null
     },
     "2229": {
@@ -24,7 +24,7 @@
       "percentChange": -9.105482526450785,
       "volume": 370800,
       "isMarketOpen": false,
-      "updatedAt": 1785918015730,
+      "updatedAt": 1785937530741,
       "error": null
     },
     "2269": {
@@ -37,7 +37,7 @@
       "percentChange": -8.5612968591692,
       "volume": 1357300,
       "isMarketOpen": false,
-      "updatedAt": 1785918015671,
+      "updatedAt": 1785937530741,
       "error": null
     },
     "2413": {
@@ -50,7 +50,7 @@
       "percentChange": -10.150181253236665,
       "volume": 3235700,
       "isMarketOpen": false,
-      "updatedAt": 1785918015328,
+      "updatedAt": 1785937530299,
       "error": null
     },
     "2768": {
@@ -63,7 +63,7 @@
       "percentChange": 0.78578110383536,
       "volume": 1029000,
       "isMarketOpen": false,
-      "updatedAt": 1785918015707,
+      "updatedAt": 1785937530729,
       "error": null
     },
     "2802": {
@@ -76,7 +76,7 @@
       "percentChange": 10.20872081008473,
       "volume": 6316000,
       "isMarketOpen": false,
-      "updatedAt": 1785918013027,
+      "updatedAt": 1785937528008,
       "error": null
     },
     "2871": {
@@ -89,7 +89,7 @@
       "percentChange": -7.858843905607274,
       "volume": 1089600,
       "isMarketOpen": false,
-      "updatedAt": 1785918016171,
+      "updatedAt": 1785937531237,
       "error": null
     },
     "2914": {
@@ -102,7 +102,7 @@
       "percentChange": 2.4006001500375094,
       "volume": 4605000,
       "isMarketOpen": false,
-      "updatedAt": 1785918011375,
+      "updatedAt": 1785937526037,
       "error": null
     },
     "3038": {
@@ -115,7 +115,7 @@
       "percentChange": -3.9517398146529112,
       "volume": 1273500,
       "isMarketOpen": false,
-      "updatedAt": 1785918015678,
+      "updatedAt": 1785937530745,
       "error": null
     },
     "3092": {
@@ -128,7 +128,7 @@
       "percentChange": -6.106231702216646,
       "volume": 3425200,
       "isMarketOpen": false,
-      "updatedAt": 1785918015275,
+      "updatedAt": 1785937530275,
       "error": null
     },
     "3099": {
@@ -141,7 +141,7 @@
       "percentChange": 1.028634973589102,
       "volume": 2508800,
       "isMarketOpen": false,
-      "updatedAt": 1785918016569,
+      "updatedAt": 1785937531653,
       "error": null
     },
     "3382": {
@@ -154,7 +154,7 @@
       "percentChange": -10.882221227048813,
       "volume": 8599200,
       "isMarketOpen": false,
-      "updatedAt": 1785918011000,
+      "updatedAt": 1785937525590,
       "error": null
     },
     "4063": {
@@ -167,7 +167,7 @@
       "percentChange": 7.07088255733148,
       "volume": 8860900,
       "isMarketOpen": false,
-      "updatedAt": 1785918008703,
+      "updatedAt": 1785937523095,
       "error": null
     },
     "4188": {
@@ -180,7 +180,7 @@
       "percentChange": 1.4945054945054945,
       "volume": 6498800,
       "isMarketOpen": false,
-      "updatedAt": 1785918016109,
+      "updatedAt": 1785937531227,
       "error": null
     },
     "4307": {
@@ -193,7 +193,7 @@
       "percentChange": -18.041606886657103,
       "volume": 4646600,
       "isMarketOpen": false,
-      "updatedAt": 1785918013997,
+      "updatedAt": 1785937528919,
       "error": null
     },
     "4324": {
@@ -206,7 +206,7 @@
       "percentChange": -7.972362476747276,
       "volume": 1056300,
       "isMarketOpen": false,
-      "updatedAt": 1785918013564,
+      "updatedAt": 1785937528432,
       "error": null
     },
     "4452": {
@@ -219,7 +219,7 @@
       "percentChange": -5.791962174940898,
       "volume": 2981000,
       "isMarketOpen": false,
-      "updatedAt": 1785918011387,
+      "updatedAt": 1785937526065,
       "error": null
     },
     "4502": {
@@ -232,7 +232,7 @@
       "percentChange": -7.852395942637286,
       "volume": 3470800,
       "isMarketOpen": false,
-      "updatedAt": 1785918008700,
+      "updatedAt": 1785937523043,
       "error": null
     },
     "4543": {
@@ -245,7 +245,7 @@
       "percentChange": -5.2784102670254605,
       "volume": 4036400,
       "isMarketOpen": false,
-      "updatedAt": 1785918011389,
+      "updatedAt": 1785937526053,
       "error": null
     },
     "4568": {
@@ -258,7 +258,7 @@
       "percentChange": -10.522672204915196,
       "volume": 6793900,
       "isMarketOpen": false,
-      "updatedAt": 1785918009118,
+      "updatedAt": 1785937523516,
       "error": null
     },
     "4661": {
@@ -271,7 +271,7 @@
       "percentChange": -2.037671232876712,
       "volume": 6441700,
       "isMarketOpen": false,
-      "updatedAt": 1785918013094,
+      "updatedAt": 1785937527988,
       "error": null
     },
     "4755": {
@@ -284,7 +284,7 @@
       "percentChange": 0.27456129879431235,
       "volume": 8758300,
       "isMarketOpen": false,
-      "updatedAt": 1785918015318,
+      "updatedAt": 1785937530311,
       "error": null
     },
     "4768": {
@@ -297,7 +297,7 @@
       "percentChange": -2.737709743891669,
       "volume": 2944400,
       "isMarketOpen": false,
-      "updatedAt": 1785918015296,
+      "updatedAt": 1785937530319,
       "error": null
     },
     "4901": {
@@ -310,7 +310,7 @@
       "percentChange": -0.07830853563038372,
       "volume": 3605000,
       "isMarketOpen": false,
-      "updatedAt": 1785918011429,
+      "updatedAt": 1785937526054,
       "error": null
     },
     "5020": {
@@ -323,7 +323,7 @@
       "percentChange": -1.6104294478527608,
       "volume": 7055100,
       "isMarketOpen": false,
-      "updatedAt": 1785918012649,
+      "updatedAt": 1785937527478,
       "error": null
     },
     "5108": {
@@ -336,7 +336,7 @@
       "percentChange": -3.2098765432098766,
       "volume": 4663700,
       "isMarketOpen": false,
-      "updatedAt": 1785918011841,
+      "updatedAt": 1785937526496,
       "error": null
     },
     "5401": {
@@ -349,7 +349,7 @@
       "percentChange": 1.8181818181818181,
       "volume": 81922100,
       "isMarketOpen": false,
-      "updatedAt": 1785918011792,
+      "updatedAt": 1785937526519,
       "error": null
     },
     "5938": {
@@ -362,7 +362,7 @@
       "percentChange": -6.9724284199363735,
       "volume": 2557200,
       "isMarketOpen": false,
-      "updatedAt": 1785918014467,
+      "updatedAt": 1785937529386,
       "error": null
     },
     "6098": {
@@ -375,7 +375,7 @@
       "percentChange": -1.5098722415795587,
       "volume": 3245400,
       "isMarketOpen": false,
-      "updatedAt": 1785918008678,
+      "updatedAt": 1785937523037,
       "error": null
     },
     "6273": {
@@ -388,7 +388,7 @@
       "percentChange": 14.555622732769043,
       "volume": 257400,
       "isMarketOpen": false,
-      "updatedAt": 1785918011862,
+      "updatedAt": 1785937526494,
       "error": null
     },
     "6367": {
@@ -401,7 +401,7 @@
       "percentChange": -5.816412859560067,
       "volume": 6542900,
       "isMarketOpen": false,
-      "updatedAt": 1785918011809,
+      "updatedAt": 1785937526523,
       "error": null
     },
     "6479": {
@@ -414,7 +414,7 @@
       "percentChange": 16.62870159453303,
       "volume": 4708700,
       "isMarketOpen": false,
-      "updatedAt": 1785918014926,
+      "updatedAt": 1785937529845,
       "error": null
     },
     "6501": {
@@ -427,7 +427,7 @@
       "percentChange": 4.205518553758325,
       "volume": 14031000,
       "isMarketOpen": false,
-      "updatedAt": 1785918009191,
+      "updatedAt": 1785937523543,
       "error": null
     },
     "6503": {
@@ -440,7 +440,7 @@
       "percentChange": 9.96615268898082,
       "volume": 6634100,
       "isMarketOpen": false,
-      "updatedAt": 1785918009117,
+      "updatedAt": 1785937523567,
       "error": null
     },
     "6526": {
@@ -453,7 +453,7 @@
       "percentChange": 10.377607604964352,
       "volume": 9818500,
       "isMarketOpen": false,
-      "updatedAt": 1785918013488,
+      "updatedAt": 1785937528469,
       "error": null
     },
     "6586": {
@@ -466,7 +466,7 @@
       "percentChange": 2.586369643194261,
       "volume": 920400,
       "isMarketOpen": false,
-      "updatedAt": 1785918015321,
+      "updatedAt": 1785937530261,
       "error": null
     },
     "6594": {
@@ -479,7 +479,7 @@
       "percentChange": 12.298387096774194,
       "volume": 3349600,
       "isMarketOpen": false,
-      "updatedAt": 1785918009553,
+      "updatedAt": 1785937524002,
       "error": null
     },
     "6645": {
@@ -492,7 +492,7 @@
       "percentChange": 14.741729541497389,
       "volume": 2412800,
       "isMarketOpen": false,
-      "updatedAt": 1785918013047,
+      "updatedAt": 1785937527967,
       "error": null
     },
     "6702": {
@@ -505,7 +505,7 @@
       "percentChange": -10.738083034341363,
       "volume": 8845300,
       "isMarketOpen": false,
-      "updatedAt": 1785918009616,
+      "updatedAt": 1785937524019,
       "error": null
     },
     "6723": {
@@ -518,7 +518,7 @@
       "percentChange": 19.30538172715895,
       "volume": 19950800,
       "isMarketOpen": false,
-      "updatedAt": 1785918010047,
+      "updatedAt": 1785937524457,
       "error": null
     },
     "6724": {
@@ -531,7 +531,7 @@
       "percentChange": 2.5840229690930587,
       "volume": 1596600,
       "isMarketOpen": false,
-      "updatedAt": 1785918014498,
+      "updatedAt": 1785937529343,
       "error": null
     },
     "6752": {
@@ -544,7 +544,7 @@
       "percentChange": 26.004464285714285,
       "volume": 10315000,
       "isMarketOpen": false,
-      "updatedAt": 1785918009559,
+      "updatedAt": 1785937524003,
       "error": null
     },
     "6758": {
@@ -557,7 +557,7 @@
       "percentChange": -6.405880808611183,
       "volume": 16765700,
       "isMarketOpen": false,
-      "updatedAt": 1785918007904,
+      "updatedAt": 1785937522163,
       "error": null
     },
     "6770": {
@@ -570,7 +570,7 @@
       "percentChange": -3.768115942028986,
       "volume": 2187500,
       "isMarketOpen": false,
-      "updatedAt": 1785918013968,
+      "updatedAt": 1785937528913,
       "error": null
     },
     "6841": {
@@ -583,7 +583,7 @@
       "percentChange": -5.405887600356825,
       "volume": 2979100,
       "isMarketOpen": false,
-      "updatedAt": 1785918014884,
+      "updatedAt": 1785937529852,
       "error": null
     },
     "6857": {
@@ -596,7 +596,7 @@
       "percentChange": 20.708788258457133,
       "volume": 9461000,
       "isMarketOpen": false,
-      "updatedAt": 1785918009557,
+      "updatedAt": 1785937524011,
       "error": null
     },
     "6861": {
@@ -609,7 +609,7 @@
       "percentChange": 10.649613777383816,
       "volume": 1068000,
       "isMarketOpen": false,
-      "updatedAt": 1785918008311,
+      "updatedAt": 1785937522628,
       "error": null
     },
     "6920": {
@@ -622,7 +622,7 @@
       "percentChange": 38.845925044616294,
       "volume": 3877600,
       "isMarketOpen": false,
-      "updatedAt": 1785918010053,
+      "updatedAt": 1785937524493,
       "error": null
     },
     "6963": {
@@ -635,7 +635,7 @@
       "percentChange": 22.0508866615266,
       "volume": 6291300,
       "isMarketOpen": false,
-      "updatedAt": 1785918014880,
+      "updatedAt": 1785937529789,
       "error": null
     },
     "6971": {
@@ -648,7 +648,7 @@
       "percentChange": 8.901408450704224,
       "volume": 5847600,
       "isMarketOpen": false,
-      "updatedAt": 1785918011793,
+      "updatedAt": 1785937526552,
       "error": null
     },
     "6976": {
@@ -661,7 +661,7 @@
       "percentChange": 27.994955863808325,
       "volume": 19189000,
       "isMarketOpen": false,
-      "updatedAt": 1785918014918,
+      "updatedAt": 1785937529824,
       "error": null
     },
     "6981": {
@@ -674,7 +674,7 @@
       "percentChange": 22.023067331670823,
       "volume": 39073300,
       "isMarketOpen": false,
-      "updatedAt": 1785918009641,
+      "updatedAt": 1785937524027,
       "error": null
     },
     "7011": {
@@ -687,7 +687,7 @@
       "percentChange": 7.066381156316917,
       "volume": 29142000,
       "isMarketOpen": false,
-      "updatedAt": 1785918010010,
+      "updatedAt": 1785937524489,
       "error": null
     },
     "7148": {
@@ -700,7 +700,7 @@
       "percentChange": -2.5316455696202533,
       "volume": 513000,
       "isMarketOpen": false,
-      "updatedAt": 1785918016077,
+      "updatedAt": 1785937531250,
       "error": null
     },
     "7186": {
@@ -713,7 +713,7 @@
       "percentChange": 0.596529284164859,
       "volume": 3122500,
       "isMarketOpen": false,
-      "updatedAt": 1785918013510,
+      "updatedAt": 1785937528395,
       "error": null
     },
     "7201": {
@@ -726,7 +726,7 @@
       "percentChange": -7.1267605633802855,
       "volume": 29900100,
       "isMarketOpen": false,
-      "updatedAt": 1785918009110,
+      "updatedAt": 1785937523562,
       "error": null
     },
     "7202": {
@@ -739,7 +739,7 @@
       "percentChange": -9.227642276422763,
       "volume": 3462400,
       "isMarketOpen": false,
-      "updatedAt": 1785918014423,
+      "updatedAt": 1785937529357,
       "error": null
     },
     "7203": {
@@ -752,7 +752,7 @@
       "percentChange": -6.765834932821497,
       "volume": 48003400,
       "isMarketOpen": false,
-      "updatedAt": 1785918007901,
+      "updatedAt": 1785937522189,
       "error": null
     },
     "7261": {
@@ -765,7 +765,7 @@
       "percentChange": -6.063088897992626,
       "volume": 12097300,
       "isMarketOpen": false,
-      "updatedAt": 1785918014875,
+      "updatedAt": 1785937529827,
       "error": null
     },
     "7267": {
@@ -778,7 +778,7 @@
       "percentChange": -2.035928143712575,
       "volume": 22124900,
       "isMarketOpen": false,
-      "updatedAt": 1785918009116,
+      "updatedAt": 1785937523560,
       "error": null
     },
     "7269": {
@@ -791,7 +791,7 @@
       "percentChange": -10.564197817506384,
       "volume": 17663300,
       "isMarketOpen": false,
-      "updatedAt": 1785918013600,
+      "updatedAt": 1785937528460,
       "error": null
     },
     "7270": {
@@ -804,7 +804,7 @@
       "percentChange": -12.309599716613532,
       "volume": 11544300,
       "isMarketOpen": false,
-      "updatedAt": 1785918010459,
+      "updatedAt": 1785937524954,
       "error": null
     },
     "7283": {
@@ -817,7 +817,7 @@
       "percentChange": -6.25,
       "volume": 275900,
       "isMarketOpen": false,
-      "updatedAt": 1785918014441,
+      "updatedAt": 1785937529362,
       "error": null
     },
     "7453": {
@@ -830,7 +830,7 @@
       "percentChange": 0.8522727272727272,
       "volume": 3328000,
       "isMarketOpen": false,
-      "updatedAt": 1785918016527,
+      "updatedAt": 1785937531712,
       "error": null
     },
     "7459": {
@@ -843,7 +843,7 @@
       "percentChange": -9.610259826782146,
       "volume": 369900,
       "isMarketOpen": false,
-      "updatedAt": 1785918015729,
+      "updatedAt": 1785937530803,
       "error": null
     },
     "7733": {
@@ -856,7 +856,7 @@
       "percentChange": -2.718707940780619,
       "volume": 2945200,
       "isMarketOpen": false,
-      "updatedAt": 1785918013020,
+      "updatedAt": 1785937527973,
       "error": null
     },
     "7741": {
@@ -869,7 +869,7 @@
       "percentChange": 8.640939597315436,
       "volume": 1293800,
       "isMarketOpen": false,
-      "updatedAt": 1785918010051,
+      "updatedAt": 1785937524466,
       "error": null
     },
     "7751": {
@@ -882,7 +882,7 @@
       "percentChange": -2.0860781730346947,
       "volume": 3566900,
       "isMarketOpen": false,
-      "updatedAt": 1785918010051,
+      "updatedAt": 1785937524435,
       "error": null
     },
     "7832": {
@@ -895,7 +895,7 @@
       "percentChange": -7.00569740451572,
       "volume": 2641100,
       "isMarketOpen": false,
-      "updatedAt": 1785918014000,
+      "updatedAt": 1785937528867,
       "error": null
     },
     "8001": {
@@ -908,7 +908,7 @@
       "percentChange": -2.2238695329873983,
       "volume": 14626000,
       "isMarketOpen": false,
-      "updatedAt": 1785918010421,
+      "updatedAt": 1785937525135,
       "error": null
     },
     "8002": {
@@ -921,7 +921,7 @@
       "percentChange": -6.42802155504234,
       "volume": 8477500,
       "isMarketOpen": false,
-      "updatedAt": 1785918010881,
+      "updatedAt": 1785937525601,
       "error": null
     },
     "8031": {
@@ -934,7 +934,7 @@
       "percentChange": -4.471544715447155,
       "volume": 10211800,
       "isMarketOpen": false,
-      "updatedAt": 1785918010853,
+      "updatedAt": 1785937525582,
       "error": null
     },
     "8035": {
@@ -947,7 +947,7 @@
       "percentChange": 12.078866768759571,
       "volume": 3342100,
       "isMarketOpen": false,
-      "updatedAt": 1785918008752,
+      "updatedAt": 1785937523061,
       "error": null
     },
     "8053": {
@@ -960,7 +960,7 @@
       "percentChange": 8.071608040201005,
       "volume": 11472700,
       "isMarketOpen": false,
-      "updatedAt": 1785918010840,
+      "updatedAt": 1785937525593,
       "error": null
     },
     "8058": {
@@ -973,7 +973,7 @@
       "percentChange": -2.8469750889679712,
       "volume": 8335400,
       "isMarketOpen": false,
-      "updatedAt": 1785918010821,
+      "updatedAt": 1785937525576,
       "error": null
     },
     "8133": {
@@ -986,7 +986,7 @@
       "percentChange": -2.191519771319676,
       "volume": 76000,
       "isMarketOpen": false,
-      "updatedAt": 1785918016120,
+      "updatedAt": 1785937531240,
       "error": null
     },
     "8252": {
@@ -999,7 +999,7 @@
       "percentChange": -5.873642645607108,
       "volume": 1787500,
       "isMarketOpen": false,
-      "updatedAt": 1785918016571,
+      "updatedAt": 1785937531670,
       "error": null
     },
     "8306": {
@@ -1012,7 +1012,7 @@
       "percentChange": 0.45390070921985815,
       "volume": 41588500,
       "isMarketOpen": false,
-      "updatedAt": 1785918008300,
+      "updatedAt": 1785937522609,
       "error": null
     },
     "8316": {
@@ -1025,7 +1025,7 @@
       "percentChange": 0,
       "volume": 11937400,
       "isMarketOpen": false,
-      "updatedAt": 1785918008301,
+      "updatedAt": 1785937522592,
       "error": null
     },
     "8354": {
@@ -1038,7 +1038,7 @@
       "percentChange": 2.499317126468178,
       "volume": 681100,
       "isMarketOpen": false,
-      "updatedAt": 1785918013500,
+      "updatedAt": 1785937528435,
       "error": null
     },
     "8411": {
@@ -1051,7 +1051,7 @@
       "percentChange": 8.339728830903043,
       "volume": 10224900,
       "isMarketOpen": false,
-      "updatedAt": 1785918008336,
+      "updatedAt": 1785937522593,
       "error": null
     },
     "8591": {
@@ -1064,7 +1064,7 @@
       "percentChange": 3.6737925574030084,
       "volume": 3197700,
       "isMarketOpen": false,
-      "updatedAt": 1785918012658,
+      "updatedAt": 1785937527542,
       "error": null
     },
     "8604": {
@@ -1077,7 +1077,7 @@
       "percentChange": 6.020408163265306,
       "volume": 9075900,
       "isMarketOpen": false,
-      "updatedAt": 1785918013154,
+      "updatedAt": 1785937527993,
       "error": null
     },
     "8725": {
@@ -1090,7 +1090,7 @@
       "percentChange": -4.190056134723337,
       "volume": 3723300,
       "isMarketOpen": false,
-      "updatedAt": 1785918012209,
+      "updatedAt": 1785937526989,
       "error": null
     },
     "8750": {
@@ -1103,7 +1103,7 @@
       "percentChange": 0.8166491043203371,
       "volume": 8195100,
       "isMarketOpen": false,
-      "updatedAt": 1785918012641,
+      "updatedAt": 1785937527532,
       "error": null
     },
     "8766": {
@@ -1116,7 +1116,7 @@
       "percentChange": -5.608388198000488,
       "volume": 3213800,
       "isMarketOpen": false,
-      "updatedAt": 1785918012274,
+      "updatedAt": 1785937526992,
       "error": null
     },
     "8801": {
@@ -1129,7 +1129,7 @@
       "percentChange": -8.03848541278709,
       "volume": 9206900,
       "isMarketOpen": false,
-      "updatedAt": 1785918012281,
+      "updatedAt": 1785937527010,
       "error": null
     },
     "8802": {
@@ -1142,7 +1142,7 @@
       "percentChange": -7.277628032345014,
       "volume": 4357400,
       "isMarketOpen": false,
-      "updatedAt": 1785918012219,
+      "updatedAt": 1785937526981,
       "error": null
     },
     "8830": {
@@ -1155,7 +1155,7 @@
       "percentChange": -5.130974885228193,
       "volume": 2545500,
       "isMarketOpen": false,
-      "updatedAt": 1785918012293,
+      "updatedAt": 1785937527066,
       "error": null
     },
     "9020": {
@@ -1168,7 +1168,7 @@
       "percentChange": -11.806282722513089,
       "volume": 3379100,
       "isMarketOpen": false,
-      "updatedAt": 1785918010424,
+      "updatedAt": 1785937524958,
       "error": null
     },
     "9022": {
@@ -1181,7 +1181,7 @@
       "percentChange": -8.241494968854814,
       "volume": 2518500,
       "isMarketOpen": false,
-      "updatedAt": 1785918010458,
+      "updatedAt": 1785937524962,
       "error": null
     },
     "9202": {
@@ -1194,7 +1194,7 @@
       "percentChange": -0.06343165239454487,
       "volume": 2622500,
       "isMarketOpen": false,
-      "updatedAt": 1785918010447,
+      "updatedAt": 1785937524942,
       "error": null
     },
     "9432": {
@@ -1207,7 +1207,7 @@
       "percentChange": -5.031446540880504,
       "volume": 241102000,
       "isMarketOpen": false,
-      "updatedAt": 1785918007942,
+      "updatedAt": 1785937522187,
       "error": null
     },
     "9433": {
@@ -1220,7 +1220,7 @@
       "percentChange": -6.374959029826287,
       "volume": 10564700,
       "isMarketOpen": false,
-      "updatedAt": 1785918007902,
+      "updatedAt": 1785937522182,
       "error": null
     },
     "9434": {
@@ -1233,7 +1233,7 @@
       "percentChange": -0.51724137931034,
       "volume": 164354900,
       "isMarketOpen": false,
-      "updatedAt": 1785918008336,
+      "updatedAt": 1785937522597,
       "error": null
     },
     "9501": {
@@ -1246,7 +1246,7 @@
       "percentChange": 0.38167938931297707,
       "volume": 26520500,
       "isMarketOpen": false,
-      "updatedAt": 1785918012647,
+      "updatedAt": 1785937527498,
       "error": null
     },
     "9602": {
@@ -1259,7 +1259,7 @@
       "percentChange": -9.737590894720203,
       "volume": 5340000,
       "isMarketOpen": false,
-      "updatedAt": 1785918016099,
+      "updatedAt": 1785937531262,
       "error": null
     },
     "9684": {
@@ -1272,7 +1272,7 @@
       "percentChange": -7.897010540867462,
       "volume": 1109400,
       "isMarketOpen": false,
-      "updatedAt": 1785918014510,
+      "updatedAt": 1785937529355,
       "error": null
     },
     "9697": {
@@ -1285,7 +1285,7 @@
       "percentChange": -6.501095690284879,
       "volume": 2339700,
       "isMarketOpen": false,
-      "updatedAt": 1785918014056,
+      "updatedAt": 1785937528905,
       "error": null
     },
     "9766": {
@@ -1298,7 +1298,7 @@
       "percentChange": -7.554945054945055,
       "volume": 486700,
       "isMarketOpen": false,
-      "updatedAt": 1785918013985,
+      "updatedAt": 1785937528899,
       "error": null
     },
     "9831": {
@@ -1311,7 +1311,7 @@
       "percentChange": -6.338124572210808,
       "volume": 3625400,
       "isMarketOpen": false,
-      "updatedAt": 1785918016533,
+      "updatedAt": 1785937531737,
       "error": null
     },
     "9843": {
@@ -1324,7 +1324,7 @@
       "percentChange": -0.5881236956934168,
       "volume": 4051000,
       "isMarketOpen": false,
-      "updatedAt": 1785918011409,
+      "updatedAt": 1785937526039,
       "error": null
     },
     "9983": {
@@ -1337,7 +1337,7 @@
       "percentChange": -2.0764331210191083,
       "volume": 1326700,
       "isMarketOpen": false,
-      "updatedAt": 1785918008698,
+      "updatedAt": 1785937523071,
       "error": null
     },
     "9984": {
@@ -1350,7 +1350,7 @@
       "percentChange": 28.90523582864561,
       "volume": 59361000,
       "isMarketOpen": false,
-      "updatedAt": 1785918007903,
+      "updatedAt": 1785937522159,
       "error": null
     }
   }
